@@ -4,7 +4,7 @@ volumes:
   db-data:
 
 services: 
-  web:
+   web:
     build: .
     ports:
       - '1222:3000'
@@ -21,7 +21,7 @@ services:
     links:
       - db
   
-  db:
+   db:
     image: postgres
     volumes:
       - 'db-data:/var/lib/postgresql/data'
